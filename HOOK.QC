@@ -299,7 +299,7 @@ void () Anchor_Grapple =
 	//if (isBuilding(other)) //WK don't hook onto buildings?
 	//	return;
 
-	//Hehe spiderman time - Shami
+	//Hehe spiderman time - H2Shami
 /*
 	// Don't stick the the sky.
 	if (pointcontents(self.origin) == #CONTENT_SKY)
@@ -421,9 +421,7 @@ void () Service_Grapple =
 		else if (self.hook.enemy.classname != "player")
 				hook_dir = (self.hook.origin - self.origin);
 
-		// set the facing of the grapple
-//		self.hook.angles = vectoangles(self.hook.velocity);
-
+	//H2S
 		if (vlen(self.hook_radius) == 0) 
 		{
 			self.hook_radius = (self.hook.origin - self.origin);	//Setting radius of hook when you grapple
